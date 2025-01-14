@@ -29,10 +29,10 @@ spec:
                 name:  mongodb-secret
                 key: MONGO_INITDB_ROOT_PASSWORD
 ---
-kind: Service
+kind: Service #internal service
 apiVersion: v1
 metadata:
-  name:  mongodb-internal-service
+  name: mongodb-internal-service
 spec:
   selector:
     app: mongodb #label of the pod
